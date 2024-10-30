@@ -1,14 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Right Rinterio</title>
+    <!-- Google Manrope Font CDN path is Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Kit CDN is Here -->
+    <script
+      src="https://kit.fontawesome.com/bebff4b1c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Try customizing my config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "color-primary": "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background: linear-gradient(
+          0deg,
+          rgb(255, 255, 255),
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+    </style>
     <!-- DaisyUI CSS file & Tailwind CSS CDN script is Here -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-[#FFFFFFFF]">
+    <!-- 🚀Header Section Start is Here -->
+    <header class="lg:w-4/5 mx-auto py-8 lg:pb-xxl-1">
+      <!-- Navbar Start is Here -->
+      <nav class="navbar flex justify-between items-center">
+        <div class="space-x-1">
+          <i
+            class="-rotate-45 rounded-full bg-lime-500 text-gray-700 p-2 fa-solid fa-arrow-right-long"
+          ></i>
+          <h3 class="text-3xl text-slate-800 font-semibold">Rinterio</h3>
+        </div>
+        <div class="sm:hidden lg:block">
+          <ul class="flex gap-8 text-base font-normal">
+            <li><a class="text-zinc-800 font-semibold" href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <div class="sm:hidden lg:block">
+            <ul class="flex gap-4 items-center mx-4">
+              <li>
+                <a class="btn-circle bg-gray-100 p-4" href=""
+                  ><i
+                    class="text-xl border-gray-700 fa-solid fa-magnifying-glass"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a class="btn-circle bg-gray-100 p-4" href=""
+                  ><i
+                    class="text-xl border-gray-700 fa-solid fa-cart-shopping"
+                  ></i
+                ></a>
+              </li>
+              <button
+                class="flex gap-2 items-center btn bg-lime-400 rounded-full font-semibold px-5 py-1 border-none"
+              >
+                <a
+                  class="text-xl font-semibold text-gray-800 hover:text-white"
+                  href=""
+                  >Book Consult</a
+                >
+                <i
+                  class="-rotate-45 rounded-full bg-gray-900 text-gray-100 p-1 fa-solid fa-arrow-right-long"
+                ></i>
+              </button>
+            </ul>
+          </div>
+          <div class="sm:block lg:hidden">
+            <label class="btn btn-circle swap swap-rotate bg-white">
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" />
+
+              <!-- hamburger icon -->
+              <svg
+                class="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                />
+              </svg>
+
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </nav>
+      <!-- !😋Navbar End is Here -->
+      <!-- Hero Section Start is Here -->
+      <section
+        class="flex flex-col justify-center items-center container mx-auto px-8 py-16 gap-6"
+      >
+        <!-- Hero img container is here -->
+        <div class="">
+          <img class="w-full" src="images/banner.png" alt="" />
+        </div>
+        <!-- Hero text container is here -->
+        <div class="text-center space-y-6">
+          <h3 class="text-6xl font-bold text-gray-900">
+            A barn house of this design has a <br />
+            striking appearance
+          </h3>
+          <p class="text-base text-gray-400">
+            A barn house of this design exudes a unique charm with its fusion of
+            rustic and contemporary elements. The structure combines the classic
+            silhouette of a traditional barn—marked by high ceilings, exposed
+            beams, and wide, open spaces—with modern finishes like sleek metal
+            accents, large glass windows, and minimalist interiors. This blend
+            creates a striking appearance that harmonizes the warmth of
+            countryside aesthetics with the sophistication of modern design,
+            making it both inviting and visually impactful.
+          </p>
+          <button
+            class="btn bg-lime-200 border-none rounded-full px-6 hover:text-zinc-100"
+          >
+            <a class="hover:text-white text-base text-gray-800" href=""
+              >View Details</a
+            >
+            <i
+              class="-rotate-45 rounded-full text-gray-800 bg-lime-400 fa-solid fa-arrow-right-long p-2"
+            ></i>
+          </button>
+        </div>
+      </section>
+      <!-- !Hero Section End is Here -->
+    </header>
+    <!-- !Header Section End is Here😉 -->
+    <!-- 😎Main Section Start is Here -->
+    <main>
+      <!-- 🤔Thoughtful Section Start is Here -->
+      <section class="bg-gray-100 py-40">
+        <!-- Design thoughtful container is here  -->
+        <div
+          class="lg:w-4/5 mx-auto py-8 px-6 flex justify-between items-center relative"
+        >
+          <div class="absolute top-5 -left-3 sm:hidden lg:block">
+            <img class="w-full" src="images/Vector.png" alt="" />
+          </div>
+          <!-- text container is here -->
+          <div class="w-6/12 space-y-3">
+            <div
+              class="row-span-2 flex justify-center items-start flex-col gap-5"
+            >
+              <button
+                class="btn bg-white border-none rounded-full px-8 hover:text-zinc-100 text-center"
+              >
+                <i class="text-center fa-solid fa-arrow-right-long"></i>
+                <a
+                  class="font-semibold text-base text-gray-700 hover:text-zinc-100"
+                  href=""
+                  >About Us</a
+                >
+              </button>
+              <h3 class="text-4xl font-bold text-gray-800">
+                We design thoughtful,<br />
+                liveable spaces
+              </h3>
+              <p class="text-base font-medium text-gray-600">
+                We design spaces that are both thoughtful and livable, focusing
+                on the perfect balance between functionality and aesthetic
+                appeal. Our approach prioritizes comfort, style, and purpose,
+                creating environments where every detail adds value and enhances
+                daily life. By blending creativity with practicality, we bring
+                spaces to life in a way that truly feels like home.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-4">
+              <div
+                class="bg-white card flex items-center justify-between flex-row p-4 gap-3"
+              >
+                <img src="images/commercial.png" alt="" />
+                <div>
+                  <h4 class="text-xl font-bold text-gray-800">Commercial</h4>
+                  <p class="text-base font-medium text-gray-600">
+                    Our commercial designs are crafted to elevate professional
+                    spaces, combining functionality with style to create
+                    environments that enhance productivity and reflect brand
+                    identity. We understand the unique needs of businesses,
+                    designing spaces that are adaptable, efficient, and
+                    inspiring for both clients and employees. From sleek offices
+                    to dynamic retail spaces, our goal is to make commercial
+                    areas that leave a lasting impression.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-white card flex items-center justify-between flex-row p-4 gap-3"
+              >
+                <img src="images/residential.png" alt="" />
+                <div>
+                  <h4 class="text-xl font-bold text-gray-800">Residential</h4>
+                  <p class="text-base font-medium text-gray-600">
+                    Our residential designs focus on creating comfortable,
+                    beautiful spaces that feel like home. We take a personalized
+                    approach, tailoring each space to reflect the lifestyle and
+                    personality of its residents. From cozy living areas to
+                    serene bedrooms, every detail is thoughtfully considered to
+                    ensure warmth, functionality, and style, making each home a
+                    true sanctuary.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- img container is here -->
+          <div class="w-6/12 px-6">
+            <img class="w-full" src="images/Rectangle.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- !Thoughtful Section End is Here -->
+      <!-- Works Process Section Start is Here🤭 -->
+      <section class="bg-gray-100 py-20">
+        <div class="container mx-auto border border-red-600">
+
+        </div>
+
+      </section>
+      <!-- !Works Process Section End is Here -->
+    </main>
+    <!-- !Main Section End is Here🤭 -->
+    <!-- 🥷⚙️Footer Section Start is Here -->
+    <footer></footer>
+    <!-- !Footer Section End is Here -->
+  </body>
 </html>
