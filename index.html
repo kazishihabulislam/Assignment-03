@@ -38,6 +38,12 @@
           rgba(255, 255, 255, 0) 100%
         );
       }
+      .next-project-bg{
+        background-image: url('./images/bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
     </style>
     <!-- DaisyUI CSS file & Tailwind CSS CDN script is Here -->
     <link
@@ -618,7 +624,7 @@
       </section>
       <!--  !Latest Properties Section Start is Here -->
       <!-- Let’s Next Project Section Start is Here🤩 -->
-      <section class="bg-gray-200 py-20">
+      <section class="next-project-bg py-20">
         <div class="container mx-auto">
           <div
             class="sm:w-4/5 sm:mx-auto w-6/12 flex flex-col items-center justify-center mx-auto pb-8 space-y-6"
@@ -640,8 +646,8 @@
             </p>
           </div>
           <div>
-            <form class="w-4/5 mx-auto grid grid-cols-1 sm:gap-6 lg:gap-4">
-              <div class="sm:col-span-2">
+            <form class="w-4/5 mx-auto grid grid-cols-2 sm:gap-6 lg:gap-4">
+              <div class="sm:col-span-2 lg:col-span-1">
                 <input
                   type="text"
                   placeholder="First Name*"
@@ -649,14 +655,14 @@
                 />
               </div>
 
-              <div class="sm:col-span-2">
+              <div class="sm:col-span-2 lg:col-span-1">
                 <input
                   type="text"
                   placeholder="Last Name*"
                   class="bg-gray-100 h-16 rounded-full px-8 input input-bordered w-full"
                 />
               </div>
-              <div class="sm:col-span-2">
+              <div class="sm:col-span-2 lg:col-span-1">
                 <input
                   type="tel"
                   placeholder="Phone Number*"
@@ -664,7 +670,7 @@
                 />
               </div>
 
-              <div class="sm:col-span-2">
+              <div class="sm:col-span-2 lg:col-span-1">
                 <input
                   type="email"
                   placeholder="Email Number*"
