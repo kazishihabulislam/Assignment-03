@@ -49,9 +49,9 @@
   </head>
   <body class="bg-[#FFFFFFFF]">
     <!-- 🚀Header Section Start is Here -->
-    <header class="lg:w-4/5 mx-auto py-8 lg:pb-xxl-1">
+    <header class="lg:w-4/5 mx-auto py-8">
       <!-- Navbar Start is Here -->
-      <nav class="navbar flex justify-between items-center">
+      <nav class="sm:w-4/5 sm:mx-auto lg:w-full navbar flex justify-between items-center">
         <div class="space-x-1">
           <i
             class="-rotate-45 rounded-full bg-lime-500 text-gray-700 p-2 fa-solid fa-arrow-right-long"
@@ -133,7 +133,7 @@
       <!-- !😋Navbar End is Here -->
       <!-- Hero Section Start is Here -->
       <section
-        class="flex flex-col justify-center items-center container mx-auto px-8 py-16 gap-6"
+        class="lg:w-full sm:w-4/5 sm:mx-auto flex flex-col justify-center items-center container mx-auto lg:px-8 lg:py-16 gap-6"
       >
         <!-- Hero img container is here -->
         <div class="">
@@ -171,18 +171,18 @@
     <!-- 😎Main Section Start is Here -->
     <main>
       <!-- 🤔Thoughtful Section Start is Here -->
-      <section class="bg-gray-100 py-40">
+      <section class="bg-gray-100 sm:py-10 lg:py-40">
         <!-- Design thoughtful container is here  -->
         <div
-          class="lg:w-4/5 mx-auto py-8 px-6 flex justify-between items-center relative"
+          class="sm:w-4/5 sm:mx-auto lg:w-4/5 mx-auto lg:py-8 lg:px-6 flex sm:flex-col lg:flex-row justify-between items-center relative"
         >
-          <div class="absolute -top-4 -left-3 sm:hidden lg:block">
+          <div class="absolute top-28 -left-3 sm:hidden lg:block">
             <img class="w-full" src="./images/Vector.png" alt="" />
           </div>
           <!-- text container is here -->
-          <div class="w-6/12 space-y-3">
+          <div class="lg:w-6/12 space-y-3">
             <div
-              class="row-span-2 flex justify-center items-start flex-col gap-5"
+              class="row-span-2 flex justify-center sm:items-center lg:items-start flex-col gap-5 sm:px-3"
             >
               <button
                 class="btn bg-white border-none rounded-full px-8 hover:text-white text-center"
@@ -244,7 +244,7 @@
             </div>
           </div>
           <!-- img container is here -->
-          <div class="w-6/12 px-6">
+          <div class="sm:pt-6 lg:w-6/12 lg:px-6">
             <img class="w-full" src="./images/Rectangle.png" alt="" />
           </div>
         </div>
@@ -252,10 +252,10 @@
       <!-- !Thoughtful Section End is Here -->
       <!-- Works Process Section Start is Here🤭 -->
       <section class="bg-gray-100 lg:py-32">
-        <div class="container mx-auto">
+        <div class="lg:container mx-auto">
           <!-- text container is here -->
           <div
-            class="flex flex-col justify-center items-center text-center lg:w-2/3 mx-auto gap-6 py-4"
+            class="sm:w-4/5 sm:mx-auto flex flex-col justify-center items-center text-center gap-6 py-4"
           >
             <button
               class="btn bg-white rounded-full border-none text-gray-800 hover:bg-gray-700 hover:text-white"
@@ -264,7 +264,7 @@
               <a href="">How we works</a>
             </button>
             <h3 class="text-4xl font-bold text-gray-800">Our Works Process</h3>
-            <p class="text-base text-gray-700 font-medium">
+            <p class="sm:text-left text-base text-gray-700 font-medium">
               Our work process is a collaborative journey, starting from initial
               consultation through to the final reveal. We begin by
               understanding your vision, followed by detailed planning, design,
@@ -276,7 +276,7 @@
           </div>
           <!-- card grid container is here -->
           <div
-            class="grid grid-cols-1 md:grid-cols- lg:grid-cols-4 gap-6 px-6 py-6"
+            class="lg:w-full sm:w-4/5 sm:mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 lg:px-6 py-6"
           >
             <!-- Card 1 -->
             <div class="card bg-[#E7C1D3] rounded-2xl shadow-lg p-6 space-y-4">
@@ -352,10 +352,9 @@
       <!-- !Works Process Section End is Here -->
       <!-- 🧑‍🚀Our Latest Portfolio Section Start is Here -->
       <section
-        class="container mx-auto py-20 text-center flex lg:flex-col justify-center items-center"
-      >
+        class="sm:py-10">
         <!-- text container start is here -->
-        <div class="w-6/12 space-y-3">
+       <div class="sm:w-4/5 sm:mx-auto sm:px-6 text-center lg:w-6/12 space-y-3">
           <button
             class="btn bg-[#ABEF5F33] border-none rounded-full hover:bg-[#ABEF5F] font-bold text-base text-gray-600 lg:px-5 lg:py-1"
           >
@@ -369,15 +368,15 @@
             project reflects unique style, thoughtful details, and our passion
             for creating spaces that inspire.
           </p>
-        </div>
+       </div>
         <!-- grid container start is here -->
-        <div class="mx-auto grid grid-cols-4 gap-6 lg:pt-20">
+        <div class="sm:pt-16 sm:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-6 lg:place-content-center">
           <!-- Card 1 -->
           <div
-            class="card bg-white shadow-md col-span-3 flex justify-center flex-row gap-6 p-6"
+            class="sm:px-4 card bg-white sm:col-span-1 shadow-md md:col-span-3 flex lg:justify-center lg:flex-row gap-6 p-6"
           >
             <img class="" src="./images/img1.png" alt="" />
-            <div class="flex flex-col justify-start items-start space-y-3">
+            <div class="flex flex-col justify-start items-start lg:p-6 space-y-3">
               <h3 class="text-2xl font-bold text-gray-800">Commercial</h3>
               <p class="text-left text-base text-gray-500 font-medium">
                 Our commercial designs are tailored to meet the needs of modern
@@ -398,16 +397,16 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="card bg-white shadow-md gap-6 p-6">
-            <img src="./images/img2.png" alt="" />
+          <div class="card bg-white shadow-md lg:col-span-1 gap-6 p-6">
+            <img class="w-full" src="./images/img2.png" alt="" />
           </div>
           <!-- Card 3 -->
-          <div class="card bg-white shadow-md col-span-1 gap-6 p-6">
-            <img src="./images/img3.png" alt="" />
+          <div class=" card bg-white shadow-md lg:col-span-1 gap-6 p-6">
+            <img class="w-full" src="./images/img3.png" alt="" />
           </div>
           <!-- Card 4 -->
           <div
-            class="card bg-white shadow-md col-span-2 flex justify-center flex-row gap-6 p-6"
+            class="sm:px-6 sm:py-6 card bg-white lg:col-span-2 shadow-md flex lg:justify-center lg:flex-row gap-6 p-6"
           >
             <img src="./images/img4.png" alt="" />
             <div class="flex flex-col justify-start items-start space-y-3">
@@ -434,13 +433,13 @@
           </div>
           <!-- Card 5 -->
           <div class="card bg-white shadow-md col-span-1 gap-6 p-6">
-            <img src="./images/img5.png" alt="" />
+            <img class="w-full" src="./images/img5.png" alt="" />
           </div>
         </div>
       </section>
       <!-- !Our Latest Portfolio Section End is Here🧑‍🚀 -->
       <!--  Latest Properties Section Start is Here🏛️ -->
-      <section class="container mx-auto py-20 space-y-10">
+      <section class="container mx-auto sm:py-10 lg:py-20 space-y-10">
         <!-- latest properties text container is here -->
         <div class="text-center space-y-4">
           <p class="text-xl text-blue-600 font-bold">Recent</p>
@@ -451,10 +450,10 @@
         </div>
         <!-- latest properties sale card container is here -->
         <div
-          class="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2 gap-6 place-content-center"
+          class="lg:w-full sm:w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-6 lg:place-content-center"
         >
           <!-- Sale Card 1 -->
-          <div class="card bg-gray-50 shadow-xl row-span-1 p-6 gap-6">
+          <div class="card bg-gray-50 shadow-xl lg:row-span-1 p-6 gap-6">
             <div>
               <img class="rounded-lg" src="./images/house-1.jpg" alt="" />
             </div>
@@ -570,10 +569,10 @@
             
           </div>
           <!-- Sale Card 4 -->
-          <div class="card bg-gray-50 shadow-xl col-span-1 p-6 gap-6">
+          <div class="sm:items-center card bg-gray-50 shadow-xl col-span-1 p-6 gap-6">
             <div>
               <img
-                class="rounded-lg object-fill"
+                class="w-full rounded-lg object-fill"
                 src="./images/article1.png"
                 alt=""
               />
@@ -588,9 +587,9 @@
             </div>
           </div>
           <!-- Sale Card 5 -->
-          <div class="card bg-gray-50 shadow-xl col-span-1 p-6 gap-6">
+          <div class="sm:items-center card bg-gray-50 shadow-xl col-span-1 p-6 gap-6">
             <div>
-              <img class="rounded-lg" src="./images/article3.png" alt="" />
+              <img class="rounded-lg w-full object-cover" src="./images/article3.png" alt="" />
             </div>
             <div>
               <h3 class="text-xl font-bold text-gray-800">The Stables</h3>
@@ -602,7 +601,7 @@
             </div>
           </div>
           <!-- Sale Card 6 -->
-          <div class="card bg-gray-50 shadow-xl col-span-1 p-6 gap-6">
+          <div class="sm:items-center card bg-gray-50 shadow-xl col-span-1 p-6 gap-6">
             <div>
               <img class="rounded-lg" src="./images/article2.png" alt="" />
             </div>
@@ -622,7 +621,7 @@
       <section class="bg-gray-200 py-20">
         <div class="container mx-auto">
           <div
-            class="w-6/12 flex flex-col items-center justify-center mx-auto pb-8 space-y-6"
+            class="sm:w-4/5 sm:mx-auto w-6/12 flex flex-col items-center justify-center mx-auto pb-8 space-y-6"
           >
             <button
               class="btn hover:text-white bg-[#ABEF5F33] shadow-sm rounded-full border-none font-semibold text-base text-gray-700"
@@ -641,8 +640,8 @@
             </p>
           </div>
           <div>
-            <form class="w-4/5 mx-auto grid grid-cols-1 gap-4 md:grid-cols-2">
-              <div>
+            <form class="w-4/5 mx-auto grid grid-cols-1 sm:gap-6 lg:gap-4">
+              <div class="sm:col-span-2">
                 <input
                   type="text"
                   placeholder="First Name*"
@@ -650,14 +649,14 @@
                 />
               </div>
 
-              <div>
+              <div class="sm:col-span-2">
                 <input
                   type="text"
                   placeholder="Last Name*"
                   class="bg-gray-100 h-16 rounded-full px-8 input input-bordered w-full"
                 />
               </div>
-              <div>
+              <div class="sm:col-span-2">
                 <input
                   type="tel"
                   placeholder="Phone Number*"
@@ -665,7 +664,7 @@
                 />
               </div>
 
-              <div>
+              <div class="sm:col-span-2">
                 <input
                   type="email"
                   placeholder="Email Number*"
@@ -703,7 +702,7 @@
       class="bg-[#1C1C1C] footer footer-center bg-base-200 text-base-content rounded p-10 py-20"
     >
       <div
-        class="lg:w-6/12 flex flex-col items-center justify-center mx-auto pb-8 space-y-4"
+        class="sm:w-3/4 lg:w-6/12 flex flex-col items-center justify-center mx-auto pb-8 space-y-4"
       >
         <div class="space-x-2 flex justify-center items-center">
           <i
@@ -720,16 +719,16 @@
           interior design!
         </p>
       </div>
-      <nav class="grid grid-flow-col lg:gap-40">
-        <a class="text-base font-medium text-gray-400 link link-hover">Home</a>
-        <a class="text-base font-medium text-gray-400 link link-hover"
+      <nav class="grid lg:grid-flow-col lg:gap-40">
+        <a class="sm:text-2xl text-base font-medium text-gray-400 link link-hover">Home</a>
+        <a class="sm:text-2xl text-base font-medium text-gray-400 link link-hover"
           >Services</a
         >
-        <a class="text-base font-medium text-gray-400 link link-hover"
+        <a class="sm:text-2xl text-base font-medium text-gray-400 link link-hover"
           >Portfolio</a
         >
-        <a class="text-base font-medium text-gray-400 link link-hover">Blogs</a>
-        <a class="text-base font-medium text-gray-400 link link-hover"
+        <a class="sm:text-2xl text-base font-medium text-gray-400 link link-hover">Blogs</a>
+        <a class="sm:text-2xl text-base font-medium text-gray-400 link link-hover"
           >Contact Us</a
         >
       </nav>
